@@ -75,7 +75,12 @@ main (
   pid_dir = bstr2cstr(mme_config.pid_dir, 1);
   pid_dir = pid_dir ? pid_dir : "/var/run";
   pid_file_name = get_exe_absolute_path(pid_dir);
-  bcstrfree(pid_dir);
+  
+  if(strcmp(pid_dir, "/var/run") == 0){
+  }
+  else{
+      bcstrfree(pid_dir);
+  }
 
 #if DAEMONIZE
   pid_t pid, sid; // Our process ID and Session ID
