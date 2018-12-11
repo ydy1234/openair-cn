@@ -1,0 +1,3 @@
+1.can't find -lpthreads
+  method: modify ./BUILD/TOOLS/build_helper from 'make $make_args' to 'make' which related to system CPU #n
+
