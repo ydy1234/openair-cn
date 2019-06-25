@@ -1,3 +1,5 @@
 1.can't find -lpthreads
   method: modify ./BUILD/TOOLS/build_helper from 'make $make_args' to 'make' which related to system CPU #n
-
+2.debian 9.0.0 install libssl1.0.0
+  add "deb http://security.debian.org/debian-security jessie/updates main  " to /etc/apt/source.list
+  then exec "apt update; apt install libssl1.0.0"
